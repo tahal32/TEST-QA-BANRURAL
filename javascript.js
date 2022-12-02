@@ -1,44 +1,5 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-
-    <title>Juego de adivina tu número</title>
-
-    <style>
-      html {
-        font-family: sans-serif;
-      }
-      body {
-        width: 50%;
-        max-width: 800px;
-        min-width: 480px;
-        margin: 0 auto;
-      }
-      .lastResult {
-        color: white;
-        padding: 3px;
-      }
-    </style>
-  </head>
-
-  <body>
-    <h1>Juego Adivina tu número</h1>
-
-    <p>Hemos seleccionado un número aleatorío entre 1 a 100. Trata de adivinar el número, en un total de 10 turnos o menos. No te preocupes, te diremos sí el número es más alto o más bajo.</p>
-
-    <div class="form">
-      <label for="guessField">Ingresa el número a adivinar: </label><input type="text" id="guessField" class="guessField">
-      <input type="submit" value="Ingresar el número aleatorio" class="guessSubmit">
-    </div>
-
-    <div class="resultParas">
-      <p class="guesses"></p>
-      <p class="lastResult"></p>
-      <p class="lowOrHi"></p>
-    </div>
-
-    <script>
+javascript.js
+<script>
       let randomNumber = Math.floor(Math.random() * 100) + 1;
       const guesses = document.querySelector('.guesses');
       const lastResult = document.querySelector('.lastResult');
@@ -102,5 +63,3 @@
         randomNumber = Math.floor(Math.random() * 100) + 1;
       }
     </script>
-  </body>
-</html>
